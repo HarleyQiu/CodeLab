@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新版登录页面</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-[#F8F8F8] min-h-screen">
+      <header class="bg-[#333333] p-6">
+        <h1 class="text-white text-center text-3xl">ANTHROPIC</h1>
+      </header>
+      <main class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-lg mx-auto">
+          <h2 class="text-5xl font-bold text-center mb-6">Talk to Claude</h2>
+          <div class="space-y-6">
+            <div class="flex flex-col">
+              <label for="email" class="text-lg font-semibold">Email</label
+              ><input
+                id="email"
+                placeholder="Email address"
+                class="mt-1 p-3 border border-gray-300 rounded-md"
+                type="email"
+              />
+            </div>
+            <button
+              class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-black text-white"
+            >
+              Continue with email
+            </button>
+            <div class="text-center">OR</div>
+            <button
+              class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 w-full bg-white text-black border border-gray-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-5 h-5 mr-2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="21.17" x2="12" y1="8" y2="8"></line>
+                <line x1="3.95" x2="8.54" y1="6.06" y2="14"></line>
+                <line x1="10.88" x2="15.46" y1="21.94" y2="14"></line>
+              </svg>
+              Continue with Google
+            </button>
+          </div>
+          <p class="text-center text-sm mt-6">
+            Claude.ai is currently in open beta and usage of the platform may be
+            limited for unpaid users.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+          <div
+            class="rounded-lg border text-card-foreground shadow-sm bg-[#F4E2D8]"
+            data-v0-t="card"
+          >
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="text-2xl font-semibold leading-none tracking-tight">
+                Claude for Business
+              </h3>
+            </div>
+            <div class="p-6">
+              <p>
+                Claude is a next-generation AI assistant for your tasks, no
+                matter the scale. Our API is currently being offered to a
+                limited set of customers and researchers.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-lg border text-card-foreground shadow-sm bg-[#F4E2D8]"
+            data-v0-t="card"
+          >
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="text-2xl font-semibold leading-none tracking-tight">
+                Constitutional AI
+              </h3>
+            </div>
+            <div class="p-6"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
