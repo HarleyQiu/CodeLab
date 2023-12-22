@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-[#FFF1E5] flex flex-col items-center justify-center"
+    >
+      <header
+        class="absolute top-0 left-0 right-0 flex justify-between items-center p-4"
+      >
+        <div class="text-black font-bold text-xl">ANTHROPIC</div>
+        <div class="space-x-2">
+          <button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-black text-white"
+          >
+            Claude for Business</button
+          ><button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2"
+          >
+            Constitutional AI
+          </button>
+        </div>
+      </header>
+      <main class="w-full max-w-md p-8 bg-white text-center rounded-lg shadow">
+        <h1 class="text-5xl font-bold mb-6">Talk to Claude</h1>
+        <form class="space-y-4">
+          <div class="flex flex-col">
+            <label for="email" class="text-left font-semibold">Email</label
+            ><input
+              id="email"
+              placeholder="Email address"
+              class="border-2 border-black p-2 rounded"
+              type="email"
+            />
+          </div>
+          <button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-black text-white w-full"
+          >
+            Continue with email
+          </button>
+          <div class="relative flex items-center">
+            <div class="flex-grow border-t border-gray-300"></div>
+            <span class="flex-shrink mx-4 text-gray-500">OR</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+          </div>
+          <button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-white text-black border-2 border-black w-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-6 h-6 text-red-500 mr-2"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="4"></circle>
+              <line x1="21.17" x2="12" y1="8" y2="8"></line>
+              <line x1="3.95" x2="8.54" y1="6.06" y2="14"></line>
+              <line x1="10.88" x2="15.46" y1="21.94" y2="14"></line>
+            </svg>
+            Continue with Google
+          </button>
+        </form>
+        <p class="text-gray-600 text-sm mt-4">
+          Claude.ai is currently in open beta and usage of the platform may be
+          limited for unpaid users.
+        </p>
+      </main>
+      <footer class="absolute bottom-0 left-0 right-0 p-4 bg-[#E0AFA0]">
+        <div class="flex justify-between">
+          <button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-transparent text-black"
+          >
+            Claude for Business</button
+          ><button
+            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-transparent text-black"
+          >
+            Constitutional AI
+          </button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
